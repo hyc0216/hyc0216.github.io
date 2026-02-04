@@ -4,6 +4,75 @@
   
   
   <entry>
+    <title>P14308题解</title>
+    <link href="/2026/02/04/P14308%E9%A2%98%E8%A7%A3/"/>
+    <url>/2026/02/04/P14308%E9%A2%98%E8%A7%A3/</url>
+    
+    <content type="html"><![CDATA[<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>考虑预处理每一个正方形的左上方坐标<br>先手搓几个找找规律<br>设 $f[i]$ 代表斐波那契数列第 $i$ 项<br>第 1 个正方形： $(-f[1], f[1])$<br>第 2 个正方形： $(-f[1], f[1]-f[1])$<br>第 3 个正方形： $(-f[1]+f[2], f[1])$<br>第 4 个正方形： $(-f[1], f[1]+f[4])$<br>第 5 个正方形： $(-f[1]-f[5],f[1]+f[4])$<br>……<br>不难发现第 i 个正方形的左上角坐标有这几种情况<br>设 $zsx[i]$ 表示第 i 个正方形左上角的 x 坐标，$zsy[i]$ 表示第 i 个正方形左上角的 y 坐标 <del>没错就是拼音首字母</del>  </p><ul><li>当 $i\bmod4 &#x3D; 0$ 时：<br>$zsx[i] &#x3D; zsx[i-2]，zsy &#x3D; zsy[i-1]+f[i]$  </li><li>当 $i\bmod4 &#x3D; 1$ 时：<br>$zsx[i] &#x3D; zsx[i-1] - f[i]，zsy &#x3D; zsy[i-1]$  </li><li>当 $i\bmod4 &#x3D; 2$ 时：<br>$zsx[i] &#x3D; zsx[i-1]，zsy &#x3D; zsy[i-1]-f[i-1]$  </li><li>当 $i\bmod4 &#x3D; 3$ 时：<br>$zsx[i] &#x3D; zsx[i-1]+f[i-1]，zsy &#x3D; zsy[i-2]$</li></ul><p>最后对于每一个输入的 $(x, y)$ 从小到大枚举所有的正方形<br>第一个满足 $zsx[i] &lt;&#x3D; x$ &amp;&amp; $zsy[i] &gt;&#x3D; y$ &amp;&amp; $zsx[i] + f[i] &gt;&#x3D; x$ &amp;&amp; $zsy[i] - f[i] &lt;&#x3D; y$ 的正方形即为所求，输出对应的 $f[i]$ 值</p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>十年OI一场空，不开long long见祖宗<br><del>我这个怂包开了__int128，但应该是没必要的</del></p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre><code class="cpp">#include &lt;bits/stdc++.h&gt;using namespace std;__int128 f[110];__int128 zsx[110],zsy[110];void write(__int128 x)&#123;    if (x &gt; 9) write(x / 10);    putchar(x % 10 + &#39;0&#39;);&#125;int main()&#123;    f[1] = f[2] = 1;    for(int i = 3; i &lt;= 100; i++)&#123;        f[i] = f[i-1] + f[i-2];    &#125;    zsx[1] = -1;    zsy[1] = 1;    for(int i = 2; i &lt;= 100; i++)&#123;        if(i % 4 == 0) zsx[i] = zsx[i-2], zsy[i] = zsy[i-1] + f[i];        if(i % 4 == 1) zsx[i] = zsx[i-1] - f[i], zsy[i] = zsy[i-1];        if(i % 4 == 2) zsx[i] = zsx[i-1], zsy[i] = zsy[i-1] - f[i-1];        if(i % 4 == 3) zsx[i] = zsx[i-1] + f[i-1], zsy[i] = zsy[i-2];    &#125;    int t;    cin &gt;&gt; t;    while(t--)&#123;        long long x,y;        cin &gt;&gt; x &gt;&gt; y;        for(int i = 1; i &lt;= 100; i++)&#123;            if(zsx[i] &lt;= x &amp;&amp; zsy[i] &gt;= y &amp;&amp; zsx[i] + f[i] &gt;= x &amp;&amp; zsy[i] - f[i] &lt;= y)&#123;                write(f[i]);                cout &lt;&lt;&quot;\n&quot;;                break;            &#125;        &#125;    &#125;    return 0;&#125;</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>OI</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>题解</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>P14954题解</title>
+    <link href="/2026/02/04/P14954%E9%A2%98%E8%A7%A3/"/>
+    <url>/2026/02/04/P14954%E9%A2%98%E8%A7%A3/</url>
+    
+    <content type="html"><![CDATA[<h1 id="P14954-题解"><a href="#P14954-题解" class="headerlink" title="P14954 题解"></a>P14954 题解</h1><h3 id="赛时-60pts-遗憾离场，贪心你赢了"><a href="#赛时-60pts-遗憾离场，贪心你赢了" class="headerlink" title="赛时 60pts 遗憾离场，贪心你赢了"></a>赛时 60pts 遗憾离场，贪心你赢了</h3><p>首先，可以发现如果一个子段已经是 $520$ 了，那么动它一定是不优的，可以直接统计进答案。<br>其次，如果有单独的 $52$,$50$,$20$ 的子串，可以只添加一个字符凑成 520，如果手上还有能添加的字符就尽可能添加，然后统计进答案。<br>最后，如果还有单个的 $5$,$2$,$0$，需要添加两个字符才能凑成 $520$。我们分别记录下来剩余的可添加的字符数量，和单个的 $5$,$2$,$0$ 的数量，枚举补全多少个单个 $5$ 变成 $520$，显然可以确定剩下两种情况能增加的数量，和最后余下的可添加字符能凭空凑出来的数量。把它们加起来再取最小值即可。<br>代码如下</p><pre><code class="cpp">#include &lt;bits/stdc++.h&gt;using namespace std;string s;int main()&#123;    int t;    cin &gt;&gt; t;    while(t--)&#123;        int n,a,b,c;        cin &gt;&gt; n &gt;&gt; a &gt;&gt; b &gt;&gt; c;        cin &gt;&gt; s;        int ka = 0, kb = 0, kc = 0;        int ans = 0;        for(int i = 0; i &lt; n; i++)&#123;            if(i &lt; n - 2 &amp;&amp; s[i] == &#39;5&#39; &amp;&amp; s[i+1] == &#39;2&#39; &amp;&amp; s[i+2] == &#39;0&#39;)&#123;                ans ++;                i += 2;                continue;            &#125;            if(i &lt; n - 1 &amp;&amp; s[i] == &#39;5&#39; &amp;&amp; s[i+1] == &#39;2&#39; &amp;&amp; c)&#123;                c--;                ans++;                i += 1;                continue;            &#125;             if(i &lt; n - 1 &amp;&amp; s[i] == &#39;5&#39; &amp;&amp; s[i+1] == &#39;0&#39; &amp;&amp; b)&#123;                b--;                ans++;                i += 1;                continue;            &#125;            if(i &lt; n - 1 &amp;&amp; s[i] == &#39;2&#39; &amp;&amp; s[i+1] == &#39;0&#39; &amp;&amp; a)&#123;                a--;                ans++;                i += 1;                continue;            &#125;              if(s[i] == &#39;5&#39;) ka++;            if(s[i] == &#39;2&#39;) kb++;            if(s[i] == &#39;0&#39;) kc++;        &#125;        int sum = 0;         for(int i = 0; i &lt;= min(ka, min(c, b)); i++)&#123;            int now_c = c - i, now_b = b - i, now_a = a;            int kk = min(kb, min(now_a, now_c));            now_a -= kk, now_c -= kk;            int qq = min(kc, min(now_a, now_b));            now_a -= qq, now_b -= qq;            int mm = min(now_a, min(now_b, now_c));            sum = max(sum, i + kk + qq + mm);                    &#125;         cout &lt;&lt; ans + sum &lt;&lt; &quot;\n&quot;;    &#125;    return 0;&#125;</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>OI</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>题解</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Game</title>
+    <link href="/2026/02/04/Game/"/>
+    <url>/2026/02/04/Game/</url>
+    
+    <content type="html"><![CDATA[<p>自己做的小游戏<br><a href="https://hyc0216.github.io/hyc.game/">https://hyc0216.github.io/hyc.game/</a></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>其他</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2.4</title>
     <link href="/2026/02/04/2-4/"/>
     <url>/2026/02/04/2-4/</url>

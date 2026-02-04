@@ -21,23 +21,22 @@
   <meta name="author" content="__HYC__">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+    <meta name="description" content="思路考虑预处理每一个正方形的左上方坐标先手搓几个找找规律设 $f[i]$ 代表斐波那契数列第 $i$ 项第 1 个正方形： $(-f[1], f[1])$第 2 个正方形： $(-f[1], f[1]-f[1])$第 3 个正方形： $(-f[1]+f[2], f[1])$第 4 个正方形： $(-f[1], f[1]+f[4])$第 5 个正方形： $(-f[1]-f[5],f[1]+f[4])">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2.4">
-<meta property="og:url" content="https://hyc0216.github.io/2026/02/04/2-4/index.html">
+<meta property="og:title" content="P14308题解">
+<meta property="og:url" content="https://hyc0216.github.io/2026/02/04/P14308%E9%A2%98%E8%A7%A3/index.html">
 <meta property="og:site_name" content="hyc&#39;s blog">
-<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:description" content="思路考虑预处理每一个正方形的左上方坐标先手搓几个找找规律设 $f[i]$ 代表斐波那契数列第 $i$ 项第 1 个正方形： $(-f[1], f[1])$第 2 个正方形： $(-f[1], f[1]-f[1])$第 3 个正方形： $(-f[1]+f[2], f[1])$第 4 个正方形： $(-f[1], f[1]+f[4])$第 5 个正方形： $(-f[1]-f[5],f[1]+f[4])">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-02-04T14:57:45.000Z">
-<meta property="article:modified_time" content="2026-02-04T15:04:34.296Z">
+<meta property="article:published_time" content="2026-02-04T15:26:56.000Z">
+<meta property="article:modified_time" content="2026-02-04T15:28:26.651Z">
 <meta property="article:author" content="__HYC__">
-<meta property="article:tag" content="日常">
-<meta property="article:tag" content="private">
+<meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>2.4 - hyc&#39;s blog</title>
+  <title>P14308题解 - hyc&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -215,7 +214,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="2.4"></span>
+            <span id="subtitle" data-typed-text="P14308题解"></span>
           
         </div>
 
@@ -226,7 +225,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-02-04 22:57" pubdate>
+        <time datetime="2026-02-04 23:26" pubdate>
           2026年2月4日 晚上
         </time>
       </span>
@@ -238,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          121 字
+          1.5k 字
         
       </span>
     
@@ -249,7 +248,7 @@
         
         
         
-          2 分钟
+          13 分钟
         
       </span>
     
@@ -286,25 +285,60 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">2.4</h1>
+            <h1 id="seo-header">P14308题解</h1>
             
             
-              
-              <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="9dae391b5871978ca9d21a4870fb9c7fc5fdab3f6a2c0684a92d213d97dd494a">e1199e9324c73b0c579022a59a607fd21e7fc6570a8feab1c00a7f28f5cc64ac886475f07fd8c05681207f72a71625917b491198751d1f9c4b4e9094da79b3aa1d003db859a72f66c17fd330dac71319c54822fe6555cfd0aed6ef159071597def9157da83582dc68870d9ab417a7e030873e08c116acf3fe3bd7b4c21f8b3ad0fd4820fb373bce1c97b894beed2aa263e344c4e0378dd4150b13bb46b9c0b7268c62c3ea1139e49e53f55210501c2a419e19b676651f0ec12cb92957da35ec5ee59541c108c090f9d6472a0029d275846e0d5d679e3580f8e4eda46f34dea2b7542173c8e02ed5da2284c05676945c8bcadb6904f7ce4141c525f3a37ed334443ac14cbb525ebc5fc4baa173e06878187a189e462530406062cfea5a4cc315f926bd29be4c5139dc025aaa02d3e9fc5bf2ebe0f03c6f55cd52ef9039cb7fd95a0bc10ff3189efc4b2abe6ec23872e1370965189a0465f43a473443e0b438b6317380cd112581e941cec2f0679a5ab420cf201e7c41e0ec0c3cfc7c99797174b2db2b2b750e6f24c95fd2da403176a31e37ff75aa7f4efd10769d95c02b45b3d918a9e2f23c7f0439ab06b1abe3d77eb536c8e79120609cb4426d769c743999556e53ec3e8656f1cf4f83519da1943515faefbbdb27bfec4b593b1da145323f52ff0ccbb47312adfcb5f698a0121d2babff506abeb527b0464d533173e414444efc98832e30c6e24dc3c86d445215ff96f4c2e463c7209ec51abab9c80f93095dc1ee688dbfd2151a12a348c5e669edf9f2d20769f6ce683bf61c8a6ab900b79d8b42e37a4fc65febf3bbf5c1987dbe6ac20af6b241cc53b2dcb9b257ef708cb40d004a10bd6296c67cbcf7cac17a60d0a68af7fe6bf38f8aaa22676993bc2fbe2a439bcb0be3205ad24f4c8472bbd295ed9a7a0dcc49516781e62d2aad56cd6b23b8f04d56c2d4821150dbf3a97b9106f6f4ff600da52423642cd2a07285600</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
-              
+              <div class="markdown-body">
+                
+                <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>考虑预处理每一个正方形的左上方坐标<br>先手搓几个找找规律<br>设 $f[i]$ 代表斐波那契数列第 $i$ 项<br>第 1 个正方形： $(-f[1], f[1])$<br>第 2 个正方形： $(-f[1], f[1]-f[1])$<br>第 3 个正方形： $(-f[1]+f[2], f[1])$<br>第 4 个正方形： $(-f[1], f[1]+f[4])$<br>第 5 个正方形： $(-f[1]-f[5],f[1]+f[4])$<br>……<br>不难发现第 i 个正方形的左上角坐标有这几种情况<br>设 $zsx[i]$ 表示第 i 个正方形左上角的 x 坐标，$zsy[i]$ 表示第 i 个正方形左上角的 y 坐标 <del>没错就是拼音首字母</del>  </p>
+<ul>
+<li>当 $i\bmod4 &#x3D; 0$ 时：<br>$zsx[i] &#x3D; zsx[i-2]，zsy &#x3D; zsy[i-1]+f[i]$  </li>
+<li>当 $i\bmod4 &#x3D; 1$ 时：<br>$zsx[i] &#x3D; zsx[i-1] - f[i]，zsy &#x3D; zsy[i-1]$  </li>
+<li>当 $i\bmod4 &#x3D; 2$ 时：<br>$zsx[i] &#x3D; zsx[i-1]，zsy &#x3D; zsy[i-1]-f[i-1]$  </li>
+<li>当 $i\bmod4 &#x3D; 3$ 时：<br>$zsx[i] &#x3D; zsx[i-1]+f[i-1]，zsy &#x3D; zsy[i-2]$</li>
+</ul>
+<p>最后对于每一个输入的 $(x, y)$ 从小到大枚举所有的正方形<br>第一个满足 $zsx[i] &lt;&#x3D; x$ &amp;&amp; $zsy[i] &gt;&#x3D; y$ &amp;&amp; $zsx[i] + f[i] &gt;&#x3D; x$ &amp;&amp; $zsy[i] - f[i] &lt;&#x3D; y$ 的正方形即为所求，输出对应的 $f[i]$ 值</p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>十年OI一场空，不开long long见祖宗<br><del>我这个怂包开了__int128，但应该是没必要的</del></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre><code class="cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+__int128 f[110];
+__int128 zsx[110],zsy[110];
+void write(__int128 x)&#123;
+    if (x &gt; 9) write(x / 10);
+    putchar(x % 10 + &#39;0&#39;);
+&#125;
+int main()&#123;
+    f[1] = f[2] = 1;
+    for(int i = 3; i &lt;= 100; i++)&#123;
+        f[i] = f[i-1] + f[i-2];
+    &#125;
+    zsx[1] = -1;
+    zsy[1] = 1;
+    for(int i = 2; i &lt;= 100; i++)&#123;
+        if(i % 4 == 0) zsx[i] = zsx[i-2], zsy[i] = zsy[i-1] + f[i];
+        if(i % 4 == 1) zsx[i] = zsx[i-1] - f[i], zsy[i] = zsy[i-1];
+        if(i % 4 == 2) zsx[i] = zsx[i-1], zsy[i] = zsy[i-1] - f[i-1];
+        if(i % 4 == 3) zsx[i] = zsx[i-1] + f[i-1], zsy[i] = zsy[i-2];
+    &#125;
+    int t;
+    cin &gt;&gt; t;
+    while(t--)&#123;
+        long long x,y;
+        cin &gt;&gt; x &gt;&gt; y;
+        for(int i = 1; i &lt;= 100; i++)&#123;
+            if(zsx[i] &lt;= x &amp;&amp; zsy[i] &gt;= y &amp;&amp; zsx[i] + f[i] &gt;= x &amp;&amp; zsy[i] - f[i] &lt;= y)&#123;
+                write(f[i]);
+                cout &lt;&lt;&quot;\n&quot;;
+                break;
+            &#125;
+        &#125;
+    &#125;
+    return 0;
+&#125;
+</code></pre>
 
-              
+                
+              </div>
             
             <hr/>
             <div>
@@ -320,7 +354,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%97%A5%E8%AE%B0/" class="category-chain-item">日记</a>
+  <a href="/categories/OI/" class="category-chain-item">OI</a>
   
   
 
@@ -335,9 +369,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%97%A5%E5%B8%B8/" class="print-no-link">#日常</a>
-      
-        <a href="/tags/private/" class="print-no-link">#private</a>
+        <a href="/tags/%E9%A2%98%E8%A7%A3/" class="print-no-link">#题解</a>
       
     </div>
   
@@ -349,8 +381,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>2.4</div>
-      <div>https://hyc0216.github.io/2026/02/04/2-4/</div>
+      <div>P14308题解</div>
+      <div>https://hyc0216.github.io/2026/02/04/P14308题解/</div>
     </div>
     <div class="license-meta">
       
@@ -394,18 +426,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/02/04/Game/" title="Game">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Game</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2026/01/30/1-30/" title="1.30_">
-                        <span class="hidden-mobile">1.30_</span>
+                      <a href="/2026/02/04/P14954%E9%A2%98%E8%A7%A3/" title="P14954题解">
+                        <span class="hidden-mobile">P14954题解</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -610,23 +636,6 @@
   
 
 
-
-
-  
-  <script defer>
-    if (document.getElementById('hbePass') || document.querySelector('hbe-prefix')) {
-      Fluid.utils.waitElementLoaded('hbe-prefix', function() {
-        var hbePrefix = document.querySelector('hbe-prefix');
-        hbePrefix.parentElement.classList.add('markdown-body');
-        Fluid.utils.retry(function() {
-          if (Fluid.boot && Fluid.boot.refresh) {
-            Fluid.boot.refresh();
-            return true;
-          }
-        }, 100, 10);
-      })
-    }
-  </script>
 
 
   
