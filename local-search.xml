@@ -4,17 +4,23 @@
   
   
   <entry>
-    <title>自我介纟召</title>
+    <title>2.8</title>
     <link href="/2026/02/08/2-8/"/>
     <url>/2026/02/08/2-8/</url>
     
-    <content type="html"><![CDATA[<p>大家好<br>我是黄雨辰，我是一名初二生，来自文轩<br>我的人生格言是：线段树必须要有一棵树！<br>因为就在昨天，我因为没有建树调了半个多小时的代码……<br>我的爱好有下棋和编程<br>小学的时候学国际象棋拿了棋协大师<br>不过现在忘得差不多了<br>欢迎各位大佬前来切磋切磋<br>现在在学信息学奥赛，拿了NOIP二等奖<br>因为还是比大家少学一年<br>希望以后在文化课方面能多多包涵<br>最后推荐一下我的博客<br>hyc0216.github.io<br>希望在接下来的一个学期里能和大家相处融洽、共同进步<br>谢谢大家</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="debug是世界上最痛苦的事实名拜谢shztql"><a href="#debug是世界上最痛苦的事实名拜谢shztql" class="headerlink" title="debug是世界上最痛苦的事实名拜谢shztql"></a><strong>debug</strong>是世界上最痛苦的事<br>实名拜谢shz<br>tql</h2><p>你说的对<br>但线段树一定要有一棵树<br>返回值为Node的函数一定要返回Node<br>写了一个函数一定要调用<br>左移一定是乘以2<br>当q &#x3D; -1时一定不能写while(q–)<br>left一定是左<br>right一定是右<br>不论何时left一定要比right小<br>听懂的人都哭了</p>]]></content>
     
+    
+    <categories>
+      
+      <category>日记</category>
+      
+    </categories>
     
     
     <tags>
       
-      <tag>其他</tag>
+      <tag>日常</tag>
       
     </tags>
     
