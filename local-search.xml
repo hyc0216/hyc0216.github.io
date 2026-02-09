@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>2.9</title>
+    <link href="/2026/02/10/2-9/"/>
+    <url>/2026/02/10/2-9/</url>
+    
+    <content type="html"><![CDATA[<h3 id="神秘P15233"><a href="#神秘P15233" class="headerlink" title="神秘P15233"></a>神秘P15233</h3><p>啊啊啊啊啊<br>我终于调出来了<br>因为如果使用标准的数学里的取模来维护并查集的值<br><strong>tm会炸！</strong><br>注意到如果用数学里的取模，原本是负数的数取模之后是正数，<strong>取绝对值时不会更改它的值</strong>，导致错误、<br>但是c++自带的取模就保证了符号一致，不会丢失信息<br>这个问题也可以通过对所有负数打标记来解决<br>但是我完全没有意识到它QwQ<br>~~ 好蠢的错误（）~~<br>但是我调出来的时候真的要哭了<br>也算是我这个码力和注意力低下的蒟蒻的在debug方面的进展吧<br>ε&#x3D;(´ο｀*)))唉<br>可能真的没别人聪明吧</p><p>算了算了<br>调出来了我就<strong>开心</strong>！<br>不开心就看看<strong>miku</strong>！<br>不开心就看看<strong>洛佬</strong>！<br>不开心就持续骚扰<strong>桃姐</strong>直到她不耐烦开始肘击我！<br><strong>不开心就想想wth今天被shz和yty打了3:0！</strong><br>哦这简直<strong>太棒了</strong>！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>日记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>日常</tag>
+      
+      <tag>OI</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2.8</title>
     <link href="/2026/02/08/2-8/"/>
     <url>/2026/02/08/2-8/</url>

@@ -21,22 +21,23 @@
   <meta name="author" content="__HYC__">
   <meta name="keywords" content="">
   
-    <meta name="description" content="debug是世界上最痛苦的事你说的对但线段树一定要有一棵树返回值为Node的函数一定要返回Node写了一个函数一定要调用左移一定是乘以2当q &#x3D; -1时一定不能写while(q–)left一定是左right一定是右不论何时left一定要比right小听懂的人都哭了 另：实名拜谢shztql">
+    <meta name="description" content="神秘P15233啊啊啊啊啊我终于调出来了因为如果使用标准的数学里的取模来维护并查集的值tm会炸！注意到如果用数学里的取模，原本是负数的数取模之后是正数，取绝对值时不会更改它的值，导致错误、但是c++自带的取模就保证了符号一致，不会丢失信息这个问题也可以通过对所有负数打标记来解决但是我完全没有意识到它QwQ~~ 好蠢的错误（）~~但是我调出来的时候真的要哭了也算是我这个码力和注意力低下的蒟蒻的在de">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2.8">
-<meta property="og:url" content="https://hyc0216.github.io/2026/02/08/2-8/index.html">
+<meta property="og:title" content="2.9">
+<meta property="og:url" content="https://hyc0216.github.io/2026/02/10/2-9/index.html">
 <meta property="og:site_name" content="hyc&#39;s blog">
-<meta property="og:description" content="debug是世界上最痛苦的事你说的对但线段树一定要有一棵树返回值为Node的函数一定要返回Node写了一个函数一定要调用左移一定是乘以2当q &#x3D; -1时一定不能写while(q–)left一定是左right一定是右不论何时left一定要比right小听懂的人都哭了 另：实名拜谢shztql">
+<meta property="og:description" content="神秘P15233啊啊啊啊啊我终于调出来了因为如果使用标准的数学里的取模来维护并查集的值tm会炸！注意到如果用数学里的取模，原本是负数的数取模之后是正数，取绝对值时不会更改它的值，导致错误、但是c++自带的取模就保证了符号一致，不会丢失信息这个问题也可以通过对所有负数打标记来解决但是我完全没有意识到它QwQ~~ 好蠢的错误（）~~但是我调出来的时候真的要哭了也算是我这个码力和注意力低下的蒟蒻的在de">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-02-08T11:05:18.000Z">
-<meta property="article:modified_time" content="2026-02-08T14:28:56.567Z">
+<meta property="article:published_time" content="2026-02-09T16:41:19.000Z">
+<meta property="article:modified_time" content="2026-02-09T17:14:49.024Z">
 <meta property="article:author" content="__HYC__">
 <meta property="article:tag" content="日常">
+<meta property="article:tag" content="OI">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>2.8 - hyc&#39;s blog</title>
+  <title>2.9 - hyc&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -202,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="2.8"></span>
+            <span id="subtitle" data-typed-text="2.9"></span>
           
         </div>
 
@@ -213,8 +214,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-02-08 19:05" pubdate>
-          2026年2月8日 晚上
+        <time datetime="2026-02-10 00:41" pubdate>
+          2026年2月10日 凌晨
         </time>
       </span>
     
@@ -225,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          147 字
+          322 字
         
       </span>
     
@@ -236,7 +237,7 @@
         
         
         
-          2 分钟
+          3 分钟
         
       </span>
     
@@ -273,13 +274,13 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">2.8</h1>
+            <h1 id="seo-header">2.9</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="debug是世界上最痛苦的事"><a href="#debug是世界上最痛苦的事" class="headerlink" title="debug是世界上最痛苦的事"></a>debug是世界上最痛苦的事</h3><p>你说的对<br>但线段树一定要有一棵树<br>返回值为Node的函数一定要返回Node<br>写了一个函数一定要调用<br>左移一定是乘以2<br>当q &#x3D; -1时一定不能写while(q–)<br>left一定是左<br>right一定是右<br>不论何时left一定要比right小<br>听懂的人都哭了</p>
-<p>另：<br>实名拜谢shz<br>tql</p>
+                <h3 id="神秘P15233"><a href="#神秘P15233" class="headerlink" title="神秘P15233"></a>神秘P15233</h3><p>啊啊啊啊啊<br>我终于调出来了<br>因为如果使用标准的数学里的取模来维护并查集的值<br><strong>tm会炸！</strong><br>注意到如果用数学里的取模，原本是负数的数取模之后是正数，<strong>取绝对值时不会更改它的值</strong>，导致错误、<br>但是c++自带的取模就保证了符号一致，不会丢失信息<br>这个问题也可以通过对所有负数打标记来解决<br>但是我完全没有意识到它QwQ<br>~~ 好蠢的错误（）~~<br>但是我调出来的时候真的要哭了<br>也算是我这个码力和注意力低下的蒟蒻的在debug方面的进展吧<br>ε&#x3D;(´ο｀*)))唉<br>可能真的没别人聪明吧</p>
+<p>算了算了<br>调出来了我就<strong>开心</strong>！<br>不开心就看看<strong>miku</strong>！<br>不开心就看看<strong>洛佬</strong>！<br>不开心就持续骚扰<strong>桃姐</strong>直到她不耐烦开始肘击我！<br><strong>不开心就想想wth今天被shz和yty打了3:0！</strong><br>哦这简直<strong>太棒了</strong>！</p>
 
                 
               </div>
@@ -315,6 +316,8 @@
       
         <a href="/tags/%E6%97%A5%E5%B8%B8/" class="print-no-link">#日常</a>
       
+        <a href="/tags/OI/" class="print-no-link">#OI</a>
+      
     </div>
   
 </div>
@@ -325,8 +328,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>2.8</div>
-      <div>https://hyc0216.github.io/2026/02/08/2-8/</div>
+      <div>2.9</div>
+      <div>https://hyc0216.github.io/2026/02/10/2-9/</div>
     </div>
     <div class="license-meta">
       
@@ -338,7 +341,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2026年2月8日</div>
+          <div>2026年2月10日</div>
         </div>
       
       
@@ -370,18 +373,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/02/10/2-9/" title="2.9">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">2.9</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2026/02/04/P14308%E9%A2%98%E8%A7%A3/" title="P14308题解">
-                        <span class="hidden-mobile">P14308题解</span>
+                      <a href="/2026/02/08/2-8/" title="2.8">
+                        <span class="hidden-mobile">2.8</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
