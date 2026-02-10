@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>线段树and扫描线学习笔记</title>
+    <link href="/2026/02/10/%E7%BA%BF%E6%AE%B5%E6%A0%91and%E6%89%AB%E6%8F%8F%E7%BA%BF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <url>/2026/02/10/%E7%BA%BF%E6%AE%B5%E6%A0%91and%E6%89%AB%E6%8F%8F%E7%BA%BF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h2 id="线段树"><a href="#线段树" class="headerlink" title="线段树"></a>线段树</h2><p>一种能在O(log)复杂度下维护区间修改、区间查询的算法<br>需要实现5个主要的函数</p><h3 id="pushup"><a href="#pushup" class="headerlink" title="pushup"></a>pushup</h3><p>根据儿子的数值修改父亲的数值<br>当儿子的数值<strong>被更新时</strong><br>需要pushup更新父亲的值</p><h3 id="pushdown"><a href="#pushdown" class="headerlink" title="pushdown"></a>pushdown</h3><p>当需要向下递归<strong>修改或查找儿子的数值时</strong><br>需要pushdown下放懒标记</p><p>注意：<br><strong>在扫描线算法中不需要此函数</strong><br>我们只保证心根节点的正确性</p><p>e.g.<br>有一个[1,6]的区间</p><ol><li><p>对区间[1, 3]+1<br>此时[1, 3].cnt &#x3D;&#x3D; 1</p></li><li><p>对区间[2,6]+1<br>此时会递归到区间[1,3]<br>如果此时使用 pushdown 下放懒标记<br>则 [1, 2].cnt &#x3D;&#x3D; [1.3].cnt &#x3D;&#x3D; 1<br>[3, 3].cnt &#x3D;&#x3D; [1,3].cnt + 1 &#x3D;&#x3D; 2</p></li><li><p>对区间[1, 3]-1<br>此时只会更改区间[1, 3]的cnt<br>则[1,3].cnt &#x3D; 0<br>但是并不会向下递归修改区间[1,2][3,3]的cnt<br>此时区间[1,2].cnt &#x3D; 1, [3,3].cnt &#x3D; 2<br><strong>这不对罢</strong><br>如果硬要递归，时间复杂度<strong>退化为暴力</strong>（TLE欢迎你）</p></li><li><p>对区间[2, 6]-1<br>其实<strong>早就炸了</strong><br>此时[1, 3].cnt &#x3D; 0<br>所以pushdown没用<br>别的先不看<br>就看最后<br>操作都全结束了[1,2].cnt和[3,3].cnt还tm＞0</p></li></ol><h3 id="build"><a href="#build" class="headerlink" title="build"></a>build</h3><p>建树的函数<br>一定要记得在main函数里调用啊<br>一定要给非叶子结点赋上左右端点啊<br>一定记得在递归之后pushup给当前节点赋初值啊<br>简单<br>但容易出错</p><h3 id="modify"><a href="#modify" class="headerlink" title="modify"></a>modify</h3><p>区间修改<br>正常线段树要在递归前pushdown下传懒标记<br>在递归后pushup更新该节点的值</p><h3 id="query"><a href="#query" class="headerlink" title="query"></a>query</h3><p>区间查询<br>正常线段树要在递归前pushdown下传懒标记<br>但是因为并没有更新子节点的值<br>所以在递归之后不需要pushup更新当前节点的值</p><p>然后没了</p><h2 id="扫描线"><a href="#扫描线" class="headerlink" title="扫描线"></a>扫描线</h2><p>求若干个矩形的面积并<br>难点刚刚已经说了<br>整体思路就是先离散化，然后去重、排序<br>最后把一个矩形的左边界抽象成在区间 [y1, y2]上 +1<br>右边界抽象成在区间 [y1, y2]上 -1<br>从左到右扫描一遍<br>用线段树维护每一小段的长度<br>把面积依次加起来<br>就得到了答案</p><p>离散化、去重很ex<br>建议扔给vector<br><strong>STL大法好</strong></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>OI</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2.9</title>
     <link href="/2026/02/10/2-9/"/>
     <url>/2026/02/10/2-9/</url>
