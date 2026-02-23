@@ -4,11 +4,36 @@
   
   
   <entry>
+    <title>衤刀 中 牛勿王里</title>
+    <link href="/2026/02/22/%E8%A1%A4%E5%88%80%E4%B8%AD%E7%89%9C%E5%8B%BF%E7%8E%8B%E9%87%8C/"/>
+    <url>/2026/02/22/%E8%A1%A4%E5%88%80%E4%B8%AD%E7%89%9C%E5%8B%BF%E7%8E%8B%E9%87%8C/</url>
+    
+    <content type="html"><![CDATA[<h3 id="电与磁"><a href="#电与磁" class="headerlink" title="电与磁"></a>电与磁</h3><h4 id="电荷"><a href="#电荷" class="headerlink" title="电荷"></a>电荷</h4><p>同性相斥，异性相吸<br>波斯橡皮，波正橡负</p><h4 id="电流"><a href="#电流" class="headerlink" title="电流"></a>电流</h4><p>电流： I<br>单位： 安培 A<br>电荷的定向移动形成电流<br>I &#x3D; Q &#x2F; t<br>Q &#x3D; 通过导体横截面的电荷量<br>1 A的电流表示 1s 内通过导体横截面的电荷量是1C<br>电流表：串联、正进负出<br>形成持续电流的条件：电压、通路</p><h4 id="电压"><a href="#电压" class="headerlink" title="电压"></a>电压</h4><p>电压：U<br>单位：伏特 V<br>一节干电池 1.5V<br>我国家庭电路电压 220V<br>人体安全电压 36V<br>电压表：并联、抱谁测谁、正进负出<br>相当于断路（但不是）</p><h4 id="电阻"><a href="#电阻" class="headerlink" title="电阻"></a>电阻</h4><p>电阻：R<br>单位：欧姆 Ω<br>和导体长度、横截面积、材料、温度有关<br>滑动变阻器：串联使用，闭合开关前滑片移到阻值最大的位置（保护电路）</p><h4 id="电路"><a href="#电路" class="headerlink" title="电路"></a>电路</h4><p>I &#x3D; U &#x2F; R<br>串联电路：I &#x3D; I1 &#x3D; I2   U &#x3D; U1 + U2   –&gt;   R &#x3D; R1 + R2   U1 &#x2F; R1 &#x3D; U2 &#x2F; R2<br>串联电路中阻值变大电压也变大<br>并联电路：I &#x3D; I1 + I2   U &#x3D; U1 &#x3D; U2   –&gt;   1&#x2F;R &#x3D; 1&#x2F;R1 + 1&#x2F;R2 &#x3D; R1R2 &#x2F; R1 + R2   I1&#x2F;I2 &#x3D; R<strong>2</strong>&#x2F;R<strong>1</strong><br>动态电路中电源电压永远不变</p><h4 id="电能、电功"><a href="#电能、电功" class="headerlink" title="电能、电功"></a>电能、电功</h4><p>电能、电功 W<br>单位 焦耳 J<br>功率 P<br>单位 瓦特 W<br>W &#x3D; UIt<br>P &#x3D; W &#x2F; t<br>1 KW*h &#x3D; 3.6 * 1e6J<br>电路中 P &#x3D; P1 + P2<br>额定电压、功率：电器正常工作时的电压、功率<br>灯泡亮度由实际功率决定U越大P越大</p><h4 id="焦耳定律"><a href="#焦耳定律" class="headerlink" title="焦耳定律"></a>焦耳定律</h4><p>Q &#x3D; I^2Rt<br>Q &#x3D; 电流通过导体产生的热量<br>纯电阻电路中 Q &#x3D; W</p><h4 id="家庭电路"><a href="#家庭电路" class="headerlink" title="家庭电路"></a>家庭电路</h4><p>左中右相上接地<br>我国家庭电路电压 220V<br>电流过大的原因：总功率过大或短路<br>灯泡脑袋接相线：防止拧灯泡触电</p><h4 id="磁"><a href="#磁" class="headerlink" title="磁"></a>磁</h4><p>外部磁感线从N极出发绕一圈回到S极</p><h5 id="电生磁"><a href="#电生磁" class="headerlink" title="电生磁"></a>电生磁</h5><p>安培定则（右手螺旋定则）用右手握住通电螺线管，让四指指向电流的方向，那么大拇指所指的那一端是通电螺线管的N极<br>电流越大、线圈匝数越密磁性越强</p><h5 id="电动机"><a href="#电动机" class="headerlink" title="电动机"></a>电动机</h5><p>电能转化为机械能<br>当电流的方向或者磁感线的方向变得相反时， 通电导线受力的方向也变得相反</p><h5 id="电磁感应"><a href="#电磁感应" class="headerlink" title="电磁感应"></a>电磁感应</h5><p>闭合电路的一部分导体在磁场中做切割磁感线运动事，导体中产生电流<br>机械能转电能</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>物理</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>初中亻匕学</title>
     <link href="/2026/02/20/%E5%88%9D%E4%B8%AD%E4%BA%BB%E5%8C%95%E5%AD%A6/"/>
     <url>/2026/02/20/%E5%88%9D%E4%B8%AD%E4%BA%BB%E5%8C%95%E5%AD%A6/</url>
     
-    <content type="html"><![CDATA[<h2 id="一些背不下来但是可能有的也不需要背的东西"><a href="#一些背不下来但是可能有的也不需要背的东西" class="headerlink" title="一些背不下来但是可能有的也不需要背的东西"></a>一些背不下来但是可能有的也不需要背的东西</h2><h3 id="元素周期表前20"><a href="#元素周期表前20" class="headerlink" title="元素周期表前20"></a>元素周期表前20</h3><p>H   He   Li Be B   C N O  F Ne<br>Na Mg Al Si  P   S Cl Ar K Ca </p><h3 id="化合价"><a href="#化合价" class="headerlink" title="化合价"></a>化合价</h3><p>K Na H Ag +1<br>Ca Mg Cu Zn Ba +2<br>Al +3 O -2<br>Cl -1<br>亚铁：+2 铁 +3<br>OH NO3 -1<br>SO4 CO3 -2<br>NH4 +1</p><h3 id="奇妙的化合物-离子和他们的俗称、符号表示"><a href="#奇妙的化合物-离子和他们的俗称、符号表示" class="headerlink" title="奇妙的化合物&#x2F;离子和他们的俗称、符号表示"></a>奇妙的化合物&#x2F;离子和他们的俗称、符号表示</h3><p>硫酸根 SO4 -2价<br>碳酸根 CO3 -2价<br>氢氧根 OH  -1价<br>硝酸根 NO3 -1价<br>硫酸 H2SO4<br>盐酸 HCl<br>碳酸 H2CO3<br>大理石、石灰石   碳酸钙 CaCO3<br>石灰水、熟石灰   氢氧化钙 Ca(OH)2<br>生石灰  氧化钙 CaO<br>高锰酸钾  KMnO4<br>氢氧化钠  NaOH<br>苏打、纯碱 碳酸钠 Na2CO3<br>小苏打 碳酸氢钠 NaHCO3</p><h3 id="离子の颜色"><a href="#离子の颜色" class="headerlink" title="离子の颜色"></a>离子の颜色</h3><p>Fe2+  浅绿<br>Fe3+  黄色<br>Cu2+  蓝色<br>MnO4 - 紫红色</p><h2 id="四大基本反应类型"><a href="#四大基本反应类型" class="headerlink" title="四大基本反应类型"></a>四大基本反应类型</h2><h3 id="化合反应"><a href="#化合反应" class="headerlink" title="化合反应"></a>化合反应</h3><p>A + B + …… –&gt; X<br>e.g. CO2 + C &#x3D;&#x3D; 2CO </p><h3 id="分解反应"><a href="#分解反应" class="headerlink" title="分解反应"></a>分解反应</h3><p>X –&gt; A + B + ……<br>               加热<br>e.g.  KMnO4 &#x3D;&#x3D;&#x3D;&#x3D; K2MnO4 + MnO2 + O2↑<br>    H2CO3 &#x3D;&#x3D; CO2↑ + H2O</p><h3 id="置换反应"><a href="#置换反应" class="headerlink" title="置换反应"></a>置换反应</h3><p>A + BC –&gt; B + AC<br>e.g. Fe + 2HCl &#x3D;&#x3D; FeCl2 + H2↑<br>    Mg + 2HCl &#x3D;&#x3D; MgCl2 + H2↑</p><h3 id="复分解反应"><a href="#复分解反应" class="headerlink" title="复分解反应"></a>复分解反应</h3><p>AB + CD &#x3D;&#x3D; AD + BC</p><ol><li><p>反应物都是化合物</p></li><li><p>在反应中反应物相互交换成分</p></li><li><p>生成物中有沉淀或气体或水</p></li><li><p>酸 + 碱 –&gt; 盐 + 水  反应物至少一种可溶</p></li><li><p>酸 + 盐 –&gt; 新酸 + 新盐  反应物中的酸必须可溶</p></li><li><p>碱 + 盐 –&gt; 新碱 + 新盐   反应物都必须可溶</p></li><li><p>盐1 + 盐2 –&gt; 新盐1 + 新盐2   反应物都必须可溶</p></li><li><p>酸 + 金属氧化物 –&gt; 盐 + 水</p></li></ol><p>e.g.<br>Na2CO3 + Ca(OH)2 &#x3D;&#x3D; CaCO3↓ + 2NaOH<br>NaOH + CuSO4 &#x3D;&#x3D; Cu(OH)2↓ + Na2SO4<br>HCl + NaOH &#x3D;&#x3D; NaCl + H2O （中和反应）</p><h3 id="阿巴阿巴我也不知道是什么反应"><a href="#阿巴阿巴我也不知道是什么反应" class="headerlink" title="阿巴阿巴我也不知道是什么反应"></a>阿巴阿巴我也不知道是什么反应</h3><p>Ca(OH)2 + CO2 &#x3D;&#x3D; CaCO3↓ + H2O<br>2NaOH + CO2 &#x3D;&#x3D; Na2CO3 + H2O</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="一些背不下来但是可能有的也不需要背的东西"><a href="#一些背不下来但是可能有的也不需要背的东西" class="headerlink" title="一些背不下来但是可能有的也不需要背的东西"></a>一些背不下来但是可能有的也不需要背的东西</h2><h3 id="元素周期表前20"><a href="#元素周期表前20" class="headerlink" title="元素周期表前20"></a>元素周期表前20</h3><p>H   He   Li Be B   C N O  F Ne<br>Na Mg Al Si  P   S Cl Ar K Ca </p><h3 id="化合价"><a href="#化合价" class="headerlink" title="化合价"></a>化合价</h3><p>K Na H Ag +1<br>Ca Mg Cu Zn Ba +2<br>Al +3 O -2<br>Cl -1<br>亚铁：+2 铁 +3<br>OH NO3 -1<br>SO4 CO3 -2<br>NH4 +1</p><h3 id="奇妙的化合物-离子和他们的俗称、符号表示"><a href="#奇妙的化合物-离子和他们的俗称、符号表示" class="headerlink" title="奇妙的化合物&#x2F;离子和他们的俗称、符号表示"></a>奇妙的化合物&#x2F;离子和他们的俗称、符号表示</h3><p>硫酸根 SO4 -2价<br>碳酸根 CO3 -2价<br>氢氧根 OH  -1价<br>硝酸根 NO3 -1价<br>硫酸 H2SO4<br>盐酸 HCl<br>碳酸 H2CO3<br>大理石、石灰石   碳酸钙 CaCO3<br>石灰水、熟石灰   氢氧化钙 Ca(OH)2<br>生石灰  氧化钙 CaO<br>高锰酸钾  KMnO4<br>氢氧化钠  NaOH<br>苏打、纯碱 碳酸钠 Na2CO3<br>小苏打 碳酸氢钠 NaHCO3</p><h3 id="离子の颜色"><a href="#离子の颜色" class="headerlink" title="离子の颜色"></a>离子の颜色</h3><p>Fe2+  浅绿<br>Fe3+  黄色<br>Cu2+  蓝色<br>MnO4 - 紫红色</p><h2 id="四大基本反应类型"><a href="#四大基本反应类型" class="headerlink" title="四大基本反应类型"></a>四大基本反应类型</h2><h3 id="化合反应"><a href="#化合反应" class="headerlink" title="化合反应"></a>化合反应</h3><p>A + B + …… –&gt; X<br>e.g. CO2 + C &#x3D;&#x3D; 2CO </p><h3 id="分解反应"><a href="#分解反应" class="headerlink" title="分解反应"></a>分解反应</h3><p>X –&gt; A + B + ……<br>               加热<br>e.g.  KMnO4 &#x3D;&#x3D;&#x3D;&#x3D; K2MnO4 + MnO2 + O2↑<br>    H2CO3 &#x3D;&#x3D; CO2↑ + H2O</p><h3 id="置换反应"><a href="#置换反应" class="headerlink" title="置换反应"></a>置换反应</h3><p>A + BC –&gt; B + AC<br>e.g. Fe + 2HCl &#x3D;&#x3D; FeCl2 + H2↑<br>    Mg + 2HCl &#x3D;&#x3D; MgCl2 + H2↑</p><h3 id="复分解反应"><a href="#复分解反应" class="headerlink" title="复分解反应"></a>复分解反应</h3><p>AB + CD &#x3D;&#x3D; AD + BC</p><ol><li><p>反应物都是化合物</p></li><li><p>在反应中反应物相互交换成分</p></li><li><p>生成物中有沉淀或气体或水</p></li><li><p>酸 + 碱 –&gt; 盐 + 水  反应物至少一种可溶</p></li><li><p>酸 + 盐 –&gt; 新酸 + 新盐  反应物中的酸必须可溶</p></li><li><p>碱 + 盐 –&gt; 新碱 + 新盐   反应物都必须可溶</p></li><li><p>盐1 + 盐2 –&gt; 新盐1 + 新盐2   反应物都必须可溶</p></li><li><p>酸 + 金属氧化物 –&gt; 盐 + 水</p></li></ol><p>e.g.<br>Na2CO3 + Ca(OH)2 &#x3D;&#x3D; CaCO3↓ + 2NaOH<br>NaOH + CuSO4 &#x3D;&#x3D; Cu(OH)2↓ + Na2SO4<br>HCl + NaOH &#x3D;&#x3D; NaCl + H2O （中和反应）</p><p>听大佬说是酸碱中和反应<br>Ca(OH)2 + CO2 &#x3D;&#x3D; CaCO3↓ + H2O<br>2NaOH + CO2 &#x3D;&#x3D; Na2CO3 + H2O</p>]]></content>
     
     
     
@@ -369,19 +394,6 @@
       <tag>作文</tag>
       
     </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="/2026/01/25/hello-world/"/>
-    <url>/2026/01/25/hello-world/</url>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
     
   </entry>
   

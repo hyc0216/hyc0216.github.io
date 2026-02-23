@@ -21,21 +21,21 @@
   <meta name="author" content="__HYC__">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="有误。这个证明没有说明当 $n &#x3D; 2$ 时的情形，其余证明是正确的。 因为任意一个圆盘有三种可能的摆放，所以 n 个圆盘有 $3^n$ 种摆放方式。最短的移动序列有 $3^n-1$ 步，且不会有任意两步后的状态完全相同，所以共有 $3^n$ 种状态 不能。因为第 $n$ 个圆最多和之前的 $n-1$ 个圆产生 $2(n-1)$ 个交点，再分割出  $2(n-1)$ 个区间所以第 $4">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://hyc0216.github.io/2026/01/25/hello-world/index.html">
+<meta property="og:title" content="第一章">
+<meta property="og:url" content="https://hyc0216.github.io/2026/02/22/%E7%AC%AC%E4%B8%80%E7%AB%A0/index.html">
 <meta property="og:site_name" content="hyc&#39;s blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="有误。这个证明没有说明当 $n &#x3D; 2$ 时的情形，其余证明是正确的。 因为任意一个圆盘有三种可能的摆放，所以 n 个圆盘有 $3^n$ 种摆放方式。最短的移动序列有 $3^n-1$ 步，且不会有任意两步后的状态完全相同，所以共有 $3^n$ 种状态 不能。因为第 $n$ 个圆最多和之前的 $n-1$ 个圆产生 $2(n-1)$ 个交点，再分割出  $2(n-1)$ 个区间所以第 $4">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-01-25T07:12:10.353Z">
-<meta property="article:modified_time" content="2026-01-25T07:11:04.866Z">
+<meta property="article:published_time" content="2026-02-22T15:00:22.000Z">
+<meta property="article:modified_time" content="2026-02-23T17:48:50.775Z">
 <meta property="article:author" content="__HYC__">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hello World - hyc&#39;s blog</title>
+  <title>第一章 - hyc&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -201,7 +201,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="第一章"></span>
           
         </div>
 
@@ -212,8 +212,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-01-25 15:12" pubdate>
-          2026年1月25日 下午
+        <time datetime="2026-02-22 23:00" pubdate>
+          2026年2月22日 晚上
         </time>
       </span>
     
@@ -224,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          367 字
+          1.4k 字
         
       </span>
     
@@ -235,7 +235,7 @@
         
         
         
-          4 分钟
+          12 分钟
         
       </span>
     
@@ -272,24 +272,19 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello World</h1>
+            <h1 id="seo-header">第一章</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <ol>
+<li>有误。这个证明没有说明当 $n &#x3D; 2$ 时的情形，其余证明是正确的。</li>
+<li>因为任意一个圆盘有三种可能的摆放，所以 n 个圆盘有 $3^n$ 种摆放方式。<br>最短的移动序列有 $3^n-1$ 步，且不会有任意两步后的状态完全相同，所以共有 $3^n$ 种状态</li>
+<li>不能。<br>因为第 $n$ 个圆最多和之前的 $n-1$ 个圆产生 $2(n-1)$ 个交点，再分割出  $2(n-1)$ 个区间<br>所以第 $4$ 个圆最多再分割出 $2 * (4 - 1) &#x3D; 6$ 个区间</li>
+<li>$Q_{0}&#x3D;\alpha$，<br>$Q_{1}&#x3D;\beta$，<br>$Q_{2}&#x3D;\dfrac{1+\beta}\alpha$，<br>$Q_{3}&#x3D;\dfrac{1+\alpha+\beta}{\alpha\beta}$，<br>$Q_{4}&#x3D;\dfrac{1+\alpha}\beta$。<br>得到规律<br>$Q_{5k}&#x3D;\alpha$，<br>$Q_{5k+1}&#x3D;\beta$，<br>$Q_{5k+2}&#x3D;\dfrac{1+\beta}\alpha$，<br>$Q_{5k+3}&#x3D;\dfrac{1+\alpha+\beta}{\alpha\beta}$，<br>$Q_{5k+4}&#x3D;\dfrac{1+\alpha}\beta$。</li>
+<li>a.<br>$x_{1}…x_{n}&#x3D;x_{1}…x_{n-1}<em>[(x_{1}+…+x_{n-1})&#x2F;(n-1)]$<br>$[(x_{1}+…+x_{n})&#x2F;n]^n&#x3D;(x_{1}+…+x_{n-1}+x_{n})^n&#x3D;[(x_{1}+…+x_{n-1})&#x2F;(n-1)]^(n-1)</em>[(x_{1}+…+x_{n-1})&#x2F;(n-1)]$<br>所以 $x_{1}…x_{n}&lt;&#x3D;[(x_{1}+…+x_{n})&#x2F;n]^n$ 可化为 $x_{1}…x_{n-1}*[(x_{1}+…+x_{n-1})&#x2F;(n-1)]&lt;&#x3D;[(x_{1}+…+x_{n-1})&#x2F;(n-1)]^(n-1)*[(x_{1}+…+x_{n-1})&#x2F;(n-1)]$<br>又因为 $[(x_{1}+…+x_{n-1})&#x2F;(n-1)]&gt;&#x3D;0$ 所以 $x_{1}…x_{n-1}&lt;&#x3D;[(x_{1}+…+x_{n-1})&#x2F;(n-1)]^(n-1)$<br>即为 P(n) 蕴含 P(n-1)<br>b.<br>P(2n) ：x_1 * x_2 … * x_2n-1 * x_2n  &#x3D;  ((x_1 + x_2 + … + x_2n-1 + x_2n) &#x2F; 2n) ^ 2n<br>由 P(n) 得 x_1 * x_2 … * x_2n-1 * x_2n &lt;&#x3D; ((x_1 + … + x_n) &#x2F; n) ^ n * ((x_n+1 + … + x_2n) &#x2F; n)  ^ n<br>由 P(2) 得 ((x_1 + … + x_n) &#x2F; n) ^ n * ((x_n+1 + … + x_2n) &#x2F; n)  ^ n &lt;&#x3D; ((x_1 + … + x_n + x_{n+1} + … + x{2n}) &#x2F; n &#x2F; 2) ^ 2 ^ n &#x3D; ((x_1 + … + x_n + x_{n+1} + … + x{2n}) &#x2F; 2n) ^ 2n<br>c.<br>由 P(2) 可以推到 P(4)<br>由 P(4) 可以推到 P(3)<br>P(2k-1) 可以由 P(2k) 推出<br>P(2k) 可以由 P(k) 推出<br>所以 P(n) 对所有 n 为真</li>
+<li></li>
+</ol>
 
                 
               </div>
@@ -307,8 +302,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>https://hyc0216.github.io/2026/01/25/hello-world/</div>
+      <div>第一章</div>
+      <div>https://hyc0216.github.io/2026/02/22/第一章/</div>
     </div>
     <div class="license-meta">
       
@@ -320,7 +315,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2026年1月25日</div>
+          <div>2026年2月22日</div>
         </div>
       
       
@@ -347,23 +342,6 @@
 
 
 
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2026/01/25/%E5%A5%8B%E6%96%97%E7%B1%BB%E4%BD%9C%E6%96%87/" title="应试作文">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">应试作文</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                  </article>
-                </div>
               
             </div>
 
