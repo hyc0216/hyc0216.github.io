@@ -21,15 +21,15 @@
   <meta name="author" content="__HYC__">
   <meta name="keywords" content="">
   
-    <meta name="description" content="高斯函数其实就是 floor(x)记作 [x]性质：** 对于任意单增函数 f(x)，若对于所有的f(x)为整数，x都为整数，则有 [f(x)] &#x3D; [f([x])] **证明：当 x &#x3D; [x] 时，该结论显然成立当 x &gt; [x] 时因为 f(x) 单增所以 f(x) &gt; f([x])所以 [f(x)] &gt;&#x3D; [f([x])]考虑反证法假设 [f">
+    <meta name="description" content="高斯函数其实就是 floor(x)记作 [x]性质：对于任意单增函数 f(x)，若对于所有的f(x)为整数，x都为整数，则有 [f(x)] &#x3D; [f([x])]证明：当 x &#x3D; [x] 时，该结论显然成立当 x &gt; [x] 时因为 f(x) 单增所以 f(x) &gt; f([x])所以 [f(x)] &gt;&#x3D; [f([x])]考虑反证法假设 [f(x)] &amp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="4.2">
 <meta property="og:url" content="https://hyc0216.github.io/2026/04/02/4-2/index.html">
 <meta property="og:site_name" content="hyc&#39;s blog">
-<meta property="og:description" content="高斯函数其实就是 floor(x)记作 [x]性质：** 对于任意单增函数 f(x)，若对于所有的f(x)为整数，x都为整数，则有 [f(x)] &#x3D; [f([x])] **证明：当 x &#x3D; [x] 时，该结论显然成立当 x &gt; [x] 时因为 f(x) 单增所以 f(x) &gt; f([x])所以 [f(x)] &gt;&#x3D; [f([x])]考虑反证法假设 [f">
+<meta property="og:description" content="高斯函数其实就是 floor(x)记作 [x]性质：对于任意单增函数 f(x)，若对于所有的f(x)为整数，x都为整数，则有 [f(x)] &#x3D; [f([x])]证明：当 x &#x3D; [x] 时，该结论显然成立当 x &gt; [x] 时因为 f(x) 单增所以 f(x) &gt; f([x])所以 [f(x)] &gt;&#x3D; [f([x])]考虑反证法假设 [f(x)] &amp;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-04-02T15:27:21.000Z">
-<meta property="article:modified_time" content="2026-04-02T15:51:43.500Z">
+<meta property="article:modified_time" content="2026-04-02T15:53:53.507Z">
 <meta property="article:author" content="__HYC__">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary_large_image">
@@ -225,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          590 字
+          574 字
         
       </span>
     
@@ -278,8 +278,8 @@
             
               <div class="markdown-body">
                 
-                <h3 id="高斯函数"><a href="#高斯函数" class="headerlink" title="高斯函数"></a>高斯函数</h3><p>其实就是 floor(x)<br>记作 [x]<br>性质：<br>** 对于任意单增函数 f(x)，若对于所有的f(x)为整数，x都为整数，则有 [f(x)] &#x3D; [f([x])] **<br>证明：<br>当 x &#x3D; [x] 时，该结论显然成立<br>当 x &gt; [x] 时<br>因为 f(x) 单增<br>所以 f(x) &gt; f([x])<br>所以 [f(x)] &gt;&#x3D; [f([x])]<br>考虑反证法<br>假设 [f(x)] &gt; [f([x])]<br>则 存在一个整数 n ，使得 [f(x)] &gt;&#x3D; n &gt; [f([x])]<br>因为 对于所有的f(x)为整数，x都为整数<br>所以 存在一个整数 m ，使得 [f(x)] &gt;&#x3D; f(m) &gt; [f([x])]<br>因为 因为 f(x) 单增<br>所以 该条件等价于 x &gt;&#x3D; m &gt; [x]<br>矛盾<br>则 f[(x)] !&gt; [f([x])]<br>因为 [f(x)] &gt;&#x3D; [f([x])]<br>则 f[(x)] &#x3D; [f([x])]<br>证毕！</p>
-<h3 id="神秘物理（划掉）数学题"><a href="#神秘物理（划掉）数学题" class="headerlink" title="神秘物理（划掉）数学题"></a>神秘物理（划掉）数学题</h3><p>v &#x3D; 90 &#x2F; (x + 30)。求x属于[0,30]的平均速度<br>** 学习牢桑好榜样 **<br>我们直接使用朴素微元法求和<br>（其实是不会微积分导致的）<br>过程我猜你会，我就略了<br>** 正常算法 **<br>要求平均速度，就是求总时间<br>t &#x3D; x * (1&#x2F;v)<br>画一个 (1&#x2F;v) - x 图像<br>求面积<br>没了<br>** 神秘算法 **<br>你告诉我 (x+30) - x 图像是什么<br>何意味</p>
+                <h3 id="高斯函数"><a href="#高斯函数" class="headerlink" title="高斯函数"></a>高斯函数</h3><p>其实就是 floor(x)<br>记作 [x]<br>性质：<br><strong>对于任意单增函数 f(x)，若对于所有的f(x)为整数，x都为整数，则有 [f(x)] &#x3D; [f([x])]</strong><br>证明：<br>当 x &#x3D; [x] 时，该结论显然成立<br>当 x &gt; [x] 时<br>因为 f(x) 单增<br>所以 f(x) &gt; f([x])<br>所以 [f(x)] &gt;&#x3D; [f([x])]<br>考虑反证法<br>假设 [f(x)] &gt; [f([x])]<br>则 存在一个整数 n ，使得 [f(x)] &gt;&#x3D; n &gt; [f([x])]<br>因为 对于所有的f(x)为整数，x都为整数<br>所以 存在一个整数 m ，使得 [f(x)] &gt;&#x3D; f(m) &gt; [f([x])]<br>因为 因为 f(x) 单增<br>所以 该条件等价于 x &gt;&#x3D; m &gt; [x]<br>矛盾<br>则 f[(x)] !&gt; [f([x])]<br>因为 [f(x)] &gt;&#x3D; [f([x])]<br>则 f[(x)] &#x3D; [f([x])]<br>证毕！</p>
+<h3 id="神秘物理（划掉）数学题"><a href="#神秘物理（划掉）数学题" class="headerlink" title="神秘物理（划掉）数学题"></a>神秘物理（划掉）数学题</h3><p>v &#x3D; 90 &#x2F; (x + 30)。求x属于[0,30]的平均速度<br><strong>学习牢桑好榜样</strong><br>我们直接使用朴素微元法求和<br>（其实是不会微积分导致的）<br>过程我猜你会，我就略了<br><strong>正常算法</strong><br>要求平均速度，就是求总时间<br>t &#x3D; x * (1&#x2F;v)<br>画一个 (1&#x2F;v) - x 图像<br>求面积<br>没了<br><strong>神秘算法</strong><br>你告诉我 (x+30) - x 图像是什么<br>何意味</p>
 
                 
               </div>
